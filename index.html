@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Important Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GBlog - Heaven for Cricket News</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">GBlog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Topics
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Cricket Bets</a></li>
+              <li><a class="dropdown-item" href="#">Cricket Leagues</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Support</a></li>
+              <li><a class="dropdown-item" href="#">Write to Us</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex my-2 my-lg-2" role="search">
+          <input class="form-control me-2 outline-light bg-light" type="search" placeholder="Search"
+            aria-label="Search">
+          <button class="btn btn-outline-light border-light " type="submit">Search</button>
+        </form>
+
+        <div class="mx-2">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+            data-bs-target="#loginModal">Login</button>
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Sign
+            Up</button>
+        </div>
+      </div>
+  </nav>
+
+  <!-- login modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">Login to iCoder</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Signup modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="signupModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary">Create Account</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Corousel -->
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Images/1.jpg" class="d-block" width="2000px" height="500px" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Welcome to GBlog</h2>
+          <p>Cricket News, Rules and Trends</p>
+          <button type="button" class="btn btn-danger">Cricket News</button>
+          <button type="button" class="btn btn-primary">Cricket Rules</button>
+          <button type="button" class="btn btn-success">Cricket Games</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Images/2.jpg" class="d-block" width="2000px" height="500px" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>The Best Cricket Blog</h2>
+          <p>Cricket News, Rules and Trends</p>
+          <button type="button" class="btn btn-danger">Cricket News</button>
+          <button type="button" class="btn btn-primary">Cricket Rules</button>
+          <button type="button" class="btn btn-success">Cricket Games</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Images/3.jpeg" class="d-block" width="2000px" height="500px" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Award Winning Blog</h2>
+          <p>Cricket News, Rules and Trends</p>
+          <button type="button" class="btn btn-danger">Cricket News</button>
+          <button type="button" class="btn btn-primary">Cricket Rules</button>
+          <button type="button" class="btn btn-success">Cricket Games</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Cards from blog -->
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Cricketer</strong>
+            <h3 class="mb-0 danger-text-emphasis">Virat Kohli 500th International Match</h3>
+            <div class="mb-1 text-body-secondary">21 July 2023</div>
+            <p class="card-text mb-auto">Virat Kohli the "King Kohli" is playing unbeaten on half-century in his 500th international match. It would be a great day for him if he made Hundred. It would be a first time a player would made a hundred in his 500th International match. He has already broken the record of the first player to made a half-century in his 500th international match.</p>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="325" height="450" src="Images/thumb1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Cricket Betting</strong>
+            <h3 class="mb-0">Cricket Betting Racket got Busted </h3>
+            <div class="mb-1 text-body-secondary">18 July 2023</div>
+            <p class="mb-auto">Ahmedabad: A team of the state monitoring cell(SMC) of Gujarat Police on Tuesday busted a dabba trading and cricket betting racket being run near Prahladnagar Garden. According to the FIR,the SMC received an intelligence inputthat one Jignesh Soni, 40, and his two aides, all from Ghuma, were running in illegal dabba trading racket and accepting bets on cricket matches</p>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="325" height="450" src="Images/thumb2.webp" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-danger">Cricket Leagues</strong>
+            <h3 class="mb-0 ">Incresing Cricket League Market</h3>
+            <div class="mb-1 text-body-secondary">3 June 2023</div>
+            <p class="card-text mb-auto">Cricket has steadily risen over the centuries to become the world's second most popular game after soccer. The Cricket League has increased a lot in the recent past after IPL. Many different leagues are being played such as IPL(Indian Premier League), BBL(Big Bash League), CPL(Carribean Premier League), T20 Blast, PSL(Pakistan Super League), SA20(South Africe T20),The Hundred and many more.</p>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="325" height="465" src="Images/thumb3.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" height="425px">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-warning">Cricket Rule</strong>
+            <h3 class="mb-0">Massive rule change in cricket</h3>
+            <div class="mb-1 text-body-secondary">15 May 2023</div>
+            <p class="mb-auto">The International Cricket Council (ICC) has announced a significant rule change to the playing conditions (PCs) of international games. The widely-debated soft signal rule, which required the on-field umpire to make a decision before referring it to the third umpire, will be removed and replaced with a final decision by the third umpire based on video evidence.</p>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="325" height="465" src="Images/thumb4.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer using Example -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>© GBlog Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </footer>
+
+  <!-- JS library imported through Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
